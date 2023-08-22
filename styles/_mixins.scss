@@ -1,0 +1,27 @@
+@mixin bg_white { filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70); }
+
+@mixin zero_mp {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin center_xy {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin h1_fontsize {
+  font-size: 1.8rem;
+  @include media-breakpoint-up(sm) { font-size: 2.5rem; }
+  @include media-breakpoint-up(md) { font-size: 3.1rem; }
+  @include media-breakpoint-up(lg) { font-size: 4.5rem; }
+  @include media-breakpoint-up(xl) { font-size: 4.6rem; }
+}
